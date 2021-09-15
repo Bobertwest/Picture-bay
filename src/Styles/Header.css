@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+.headerContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1%;
+  margin-top: 1%;
+}
+
+.headerContainer .titulo {
+  color: #ffff;
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.headerContainer .titulo::after {
+  content: "icture bay";
+  font-family: Balsamiq Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.headerContainer .menu {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.headerContainer .menu a {
+  color: #ffff;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 1026px) {
+  .headerContainer .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerContainer .titulo {
+    font-size: 20px;
+  }
+  .headerContainer .titulo::after {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,103 @@
+@import "_paleta";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+.portadaContainer {
+  padding: 12% 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../Images/flowers-5080164_1920.jpg");
+    background-size: cover;
+    background-position: top center;
+    z-index: -1;
+    filter: brightness(30%);
+  }
+  .frase {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 76px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    color: $text-color-main;
+  }
+  .buscador {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    input,
+    button {
+      height: inherit;
+      border: none;
+      outline: none;
+    }
+    input[type="text"] {
+      width: 40%;
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+      background-color: $text-color-main;
+      padding: 0 2%;
+    }
+    button[type="submit"] {
+      width: 5%;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: $boton-backgrounColor;
+      color: $text-color-main;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .portadaContainer {
+    .frase {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .portadaContainer {
+    .frase {
+      width: 90%;
+      margin-top: 5%;
+    }
+    .buscador {
+      input[type="text"] {
+        width: 60%;
+      }
+      button[type="submit"] {
+        width: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .portadaContainer {
+    .frase {
+      font-size: 18px;
+      line-height: 21px;
+      margin: 15% auto 10%;
+    }
+    .buscador {
+      input[type="text"] {
+        width: 70%;
+      }
+      button[type="submit"] {
+        width: 15%;
+      }
+    }
+  }
+}

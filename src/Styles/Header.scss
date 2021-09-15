@@ -1,0 +1,64 @@
+@import "_paleta";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+
+.headerContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1%;
+  margin-top: 1%;
+  .titulo {
+    color: $text-color-main;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    &::after {
+      content: "icture bay";
+      font-family: Balsamiq Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .menu {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+      color: $text-color-main;
+      text-decoration: none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .headerContainer {
+    .menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerContainer {
+    .titulo {
+      font-size: 20px;
+      &::after {
+        font-size: 15px;
+      }
+    }
+  }
+}
