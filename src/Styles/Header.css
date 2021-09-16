@@ -57,6 +57,19 @@
   line-height: 28px;
 }
 
+.headerContainer .menu button {
+  color: #ffff;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
 @media screen and (max-width: 1026px) {
   .headerContainer .menu {
     display: none;
