@@ -3,17 +3,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
 
-.headerContainer {
+.Absolute {
   position: absolute;
+  margin-top: 1%;
+  .titulo {
+    color: $text-color-main;
+  }
+  .menu {
+    a {
+      color: $text-color-main;
+    }
+    button {
+      color: $text-color-main;
+    }
+  }
+}
+
+.Stiky {
+  position: fixed;
+  background-color: $text-color-main;
+  transition: background-color 300ms ease-in-out;
+  .titulo {
+    color: $text-color-secondary;
+    cursor: pointer;
+  }
+  .menu {
+    a {
+      color: $text-color-secondary;
+    }
+    button {
+      color: $text-color-secondary;
+    }
+  }
+}
+
+.Absolute,
+.Stiky {
   top: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 1%;
-  margin-top: 1%;
+
   .titulo {
-    color: $text-color-main;
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-weight: normal;
@@ -31,18 +64,9 @@
     width: 45%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    a {
-      color: $text-color-main;
-      text-decoration: none;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px;
-    }
+    padding-right: 5%;
+    justify-content: flex-end;
     button {
-      color: $text-color-main;
       cursor: pointer;
       border: none;
       background-color: inherit;
@@ -57,7 +81,8 @@
 }
 
 @media screen and (max-width: 1026px) {
-  .headerContainer {
+  .Absolute,
+  .Stiky {
     .menu {
       display: none;
     }
@@ -65,7 +90,8 @@
 }
 
 @media screen and (max-width: 400px) {
-  .headerContainer {
+  .Absolute,
+  .Stiky {
     .titulo {
       font-size: 20px;
       &::after {

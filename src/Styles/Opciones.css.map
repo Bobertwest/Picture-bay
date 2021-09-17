@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "Opciones.scss",
+        "_paleta.scss"
+    ],
+    "names": [],
+    "file": "Opciones.css"
+}

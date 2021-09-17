@@ -59,6 +59,7 @@
 
 .portadaContainer .buscador button[type="submit"] {
   width: 5%;
+  cursor: pointer;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
   background-color: #18cab4;

@@ -1,21 +1,23 @@
-import React, { Fragment } from "react";
+import React from "react";
+import "../Styles/Imagenes.css";
 import Imagen from "./Imagen";
+import Loading from "./Loading";
 
 const Imagenes = ({ imagenesData, loading }) => {
   return (
-    <div>
+    <div className="iimagenesContainer">
       {loading ? (
-        <h1>Cargando</h1>
+        <Loading />
       ) : (
-        <div id="imagenesSeccion">
+        <div id="imagenesSeccion" className="imagenesPage">
           {imagenesData.total === 0 ? (
             <h1>No se encontraron resultados</h1>
           ) : (
-            <Fragment>
+            <div className="imagen">
               {imagenesData.hits.map((pic) => (
                 <Imagen data={pic} key={pic.id} />
               ))}
-            </Fragment>
+            </div>
           )}
         </div>
       )}

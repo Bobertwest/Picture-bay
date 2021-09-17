@@ -1,8 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pacifico&family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
-.headerContainer {
+.Absolute {
   position: absolute;
+  margin-top: 1%;
+}
+
+.Absolute .titulo {
+  color: #ffff;
+}
+
+.Absolute .menu a {
+  color: #ffff;
+}
+
+.Absolute .menu button {
+  color: #ffff;
+}
+
+.Stiky {
+  position: fixed;
+  background-color: #ffff;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.Stiky .titulo {
+  color: #000000;
+  cursor: pointer;
+}
+
+.Stiky .menu a {
+  color: #000000;
+}
+
+.Stiky .menu button {
+  color: #000000;
+}
+
+.Absolute,
+.Stiky {
   top: 0;
   width: 100%;
   display: -webkit-box;
@@ -15,18 +52,18 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 1%;
-  margin-top: 1%;
 }
 
-.headerContainer .titulo {
-  color: #ffff;
+.Absolute .titulo,
+.Stiky .titulo {
   font-family: "Pacifico", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
 }
 
-.headerContainer .titulo::after {
+.Absolute .titulo::after,
+.Stiky .titulo::after {
   content: "icture bay";
   font-family: Balsamiq Sans;
   font-style: normal;
@@ -35,7 +72,8 @@
   line-height: 29px;
 }
 
-.headerContainer .menu {
+.Absolute .menu,
+.Stiky .menu {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,22 +81,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-right: 5%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.headerContainer .menu a {
-  color: #ffff;
-  text-decoration: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.headerContainer .menu button {
-  color: #ffff;
+.Absolute .menu button,
+.Stiky .menu button {
   cursor: pointer;
   border: none;
   background-color: inherit;
@@ -71,16 +101,19 @@
 }
 
 @media screen and (max-width: 1026px) {
-  .headerContainer .menu {
+  .Absolute .menu,
+  .Stiky .menu {
     display: none;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .headerContainer .titulo {
+  .Absolute .titulo,
+  .Stiky .titulo {
     font-size: 20px;
   }
-  .headerContainer .titulo::after {
+  .Absolute .titulo::after,
+  .Stiky .titulo::after {
     font-size: 15px;
   }
 }

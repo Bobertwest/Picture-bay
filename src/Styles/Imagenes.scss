@@ -1,0 +1,59 @@
+@import "_paleta";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@500&display=swap");
+
+.iimagenesContainer {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+  .imagenesPage {
+    width: 100%;
+    .imagen {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .imagenContainer {
+        padding: 0;
+        height: auto;
+        width: 30%;
+        position: relative;
+        margin: auto 1%;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          z-index: -1;
+          position: inherit;
+          width: 100%;
+          transition: all 300ms ease-in-out;
+        }
+
+        .infoImage {
+          background: rgba($color: $text-color-secondary, $alpha: 0.6);
+          position: absolute;
+          width: 100%;
+          bottom: -40px;
+          height: 40px;
+          transition: all 300ms ease-in-out;
+          display: flex;
+          justify-content: space-around;
+          p {
+            color: $text-color-main;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+          }
+        }
+        &:hover {
+          img {
+            transform: scale(1.2);
+            filter: brightness(50%);
+          }
+          .infoImage {
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
