@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ImagenesContext } from "../Context/ImagenesProvider";
 import "../Styles/Imagenes.css";
 import Imagen from "./Imagen";
 import Loading from "./Loading";
 
-const Imagenes = ({ imagenesData, loading }) => {
+const Imagenes = () => {
+  const { imagenesData, loading } = useContext(ImagenesContext);
+
   return (
     <div className="iimagenesContainer">
       {loading ? (

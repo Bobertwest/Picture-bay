@@ -1,32 +1,11 @@
-import React, { useEffect } from "react";
-import axios from "axios";
+import React, { useContext, useEffect } from "react";
 import "../Styles/Botones.css";
-import { imagenesPorPagina } from "../helpers/helpers";
 import { BiArrowToLeft, BiArrowToRight } from "react-icons/bi";
+import { ImagenesContext } from "../Context/ImagenesProvider";
 
-const Botones = ({
-  totalPaginas,
-  paginaActual,
-  setPaginaActual,
-  setImagenesData,
-  setLoading,
-  setTotalPaginas,
-  busqueda,
-}) => {
-  const buscar = async (tema) => {
-    setLoading(true);
-    try {
-      const url = `https://pixabay.com/api/?key=17294357-d3238409fe83dc90aa58137bc&q=${tema}&per_page=${imagenesPorPagina}&page=${paginaActual}&image_type=photo`;
-      const response = await axios.get(url);
-      const imagenes = response.data;
-      setImagenesData(imagenes);
-      setTotalPaginas(Math.ceil(imagenes.totalHits / imagenesPorPagina));
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
+const Botones = () => {
+  const { totalPaginas, paginaActual, setPaginaActual, busqueda, buscar } =
+    useContext(ImagenesContext);
 
   useEffect(() => {
     buscar(busqueda);

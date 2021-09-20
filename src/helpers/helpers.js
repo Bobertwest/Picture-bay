@@ -7,5 +7,3 @@ export const headerPosition = (altura) => {
   }
   return posicion;
 };
-
-export const imagenesPorPagina = 21;
