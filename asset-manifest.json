@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Picture-bay/static/css/main.d893fbb0.chunk.css",
-    "main.js": "/Picture-bay/static/js/main.3fc2015d.chunk.js",
-    "main.js.map": "/Picture-bay/static/js/main.3fc2015d.chunk.js.map",
+    "main.js": "/Picture-bay/static/js/main.a89b1a3b.chunk.js",
+    "main.js.map": "/Picture-bay/static/js/main.a89b1a3b.chunk.js.map",
     "runtime-main.js": "/Picture-bay/static/js/runtime-main.07ef621b.js",
     "runtime-main.js.map": "/Picture-bay/static/js/runtime-main.07ef621b.js.map",
-    "static/js/2.4208de4f.chunk.js": "/Picture-bay/static/js/2.4208de4f.chunk.js",
-    "static/js/2.4208de4f.chunk.js.map": "/Picture-bay/static/js/2.4208de4f.chunk.js.map",
+    "static/js/2.7adb22f8.chunk.js": "/Picture-bay/static/js/2.7adb22f8.chunk.js",
+    "static/js/2.7adb22f8.chunk.js.map": "/Picture-bay/static/js/2.7adb22f8.chunk.js.map",
     "index.html": "/Picture-bay/index.html",
     "static/css/main.d893fbb0.chunk.css.map": "/Picture-bay/static/css/main.d893fbb0.chunk.css.map",
-    "static/js/2.4208de4f.chunk.js.LICENSE.txt": "/Picture-bay/static/js/2.4208de4f.chunk.js.LICENSE.txt",
+    "static/js/2.7adb22f8.chunk.js.LICENSE.txt": "/Picture-bay/static/js/2.7adb22f8.chunk.js.LICENSE.txt",
     "static/media/Portada.css": "/Picture-bay/static/media/flowers-5080164_1920.d4b1277e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.07ef621b.js",
-    "static/js/2.4208de4f.chunk.js",
+    "static/js/2.7adb22f8.chunk.js",
     "static/css/main.d893fbb0.chunk.css",
-    "static/js/main.3fc2015d.chunk.js"
+    "static/js/main.a89b1a3b.chunk.js"
   ]
 }
