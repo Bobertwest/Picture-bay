@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useEffect } from "react";
 import { BsSearch } from "react-icons/bs";
 import { ImagenesContext } from "../Context/ImagenesProvider";
 
@@ -12,6 +13,13 @@ const Buscador = () => {
     setPaginaActual(1);
     buscar(busqueda);
   };
+
+  useEffect(() => {
+    const buscador = document.getElementById("buscadorInput");
+    if (buscador) {
+      buscador.focus();
+    }
+  }, []);
 
   return (
     <form className="buscador" onSubmit={ejecutarBusqueda}>
